@@ -4,26 +4,7 @@
 # Задача 38: Дополнить телефонный справочник возможностью изменения и удаления данных.
 # Пользователь также может ввести имя или фамилию, и Вы должны реализовать функционал
 # для изменения и удаления данных.
-# 7-9 пунктов (сохранить, открыть, добавить, удалить, найти, заменить)
-
-#
-# Олег Добровольский со 100 по 109 строки, репозиторий https://github.com/Baevar/phone_book.git
-
-# а если последний \n удалить?
-# да, можно
-
-# Вопрос, можно ли сделать с библиотеками Qt/QML?
-# Да, можно.
-
-# АВ Александр Винокуров https://github.com/AlexanderTsaricov/phoneBook
-# см.поиск по join
-
-# \\\\\\\\\\\\ Гугл-Колаб
-# https://colab.research.google.com/drive/11udiVDM85HFjqLqDqfz0ef9NLBgHUWn-?usp=share_link
-# онлайн
-# хорошо для аналитиков, т.к. много вариантов преобразований. Здесь сквозная память.
-
-
+# 7-9 пунктов (сохранить, открыть, добавить, удалить, найти)
 
 # сделать поиск по имени и по телефону вне зависимости от регистра
 
@@ -148,21 +129,6 @@ class PhoneBookApp:
         self.family_entry.delete(0, tk.END)
         self.about_entry.delete(0, tk.END)
 
-
-    # def save_phonebook(self):
-    #     filepath = filedialog.asksaveasfilename(defaultextension=".json")
-    #     if filepath:
-    #         with open(filepath, 'w') as f:
-    #             json.dump(self.phonebook, f)
-    #         messagebox.showinfo("Готово", "Телефонный справочник сохранен")
-
-    # def load_phonebook(self):
-    #     filepath = filedialog.askopenfilename(defaultextension=".json")
-    #     if filepath:
-    #         with open(filepath, 'r') as f:
-    #             self.phonebook = json.load(f)
-    #         messagebox.showinfo("Готово", "Телефонный справочник загружен")
-    #         self.display_contacts()
 
     def save_phonebook(self):
         filepath = filedialog.asksaveasfilename(defaultextension=".txt")
